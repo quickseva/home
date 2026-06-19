@@ -1,0 +1,43 @@
+.sticky {
+  position: fixed;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#whatsapp {
+  bottom: 210px;
+}
+#call {
+  bottom: 130px;
+}
+
+.sticky > img {
+  width: 70%;
+}
