@@ -2,9 +2,10 @@
 
 #main {
   height: 600px;
-  background-image: url("../assets/bg2.jpg");
+  background-image: url("../assets/bg.png");
   background-size: cover;
-  background-color: red;
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 
 #header {
@@ -44,7 +45,7 @@
   font-weight: 600;
   font-size: 0.87rem;
   margin-left: 45px;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 0 5px;
   height: 20px;
   display: flex;
@@ -56,11 +57,12 @@
 
 .header-nav-li > a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
+  user-select: none;
 }
 
 .header-nav-li:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(255, 255, 255);
   transform: scale(1.07);
 }
 
@@ -68,44 +70,21 @@
   height: 510px;
   width: 100%;
   display: flex;
-}
-#intro-left {
-  width: 50%;
-  height: 100%;
-  display: flex;
   justify-content: center;
-}
-#intro-right {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#intro-right-text1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3vw;
-  height: 50%;
-  width: 100%;
-  background-color: red;
-  text-align: center;
   align-items: center;
-  display: flex;
-  justify-content: center;
 }
-#intro-right-text2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3vw;
-  height: 50%;
-  width: 100%;
-  background-color: rgb(55, 255, 0);
+#intro > h2 {
+  font-family: "poppinsl";
+  color: aliceblue;
 }
 
 /*========for < 800px===============*/
 /*========for < 800px===============*/
 
 @media screen and (max-width: 800px) {
+  #main {
+    background-size:;
+  }
   #header {
     height: 60px;
   }
@@ -129,16 +108,5 @@
   }
   #intro {
     height: 540px;
-
-    flex-direction: column;
-  }
-
-  #intro-left {
-    width: 100%;
-    height: 50%;
-  }
-  #intro-right {
-    width: 100%;
-    height: 50%;
   }
 }
