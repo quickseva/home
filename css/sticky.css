@@ -13,10 +13,11 @@
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px #000000;
   z-index: 9999;
 
   animation: pulse 2s infinite;
+  user-select: none;
 }
 
 @keyframes pulse {
@@ -33,9 +34,11 @@
 
 #whatsapp {
   bottom: 210px;
+  user-select: none;
 }
 #call {
   bottom: 130px;
+  user-select: none;
 }
 
 .sticky > img {
