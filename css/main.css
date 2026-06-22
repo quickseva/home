@@ -1,7 +1,7 @@
 @import url("./index.css");
 
 #main {
-  height: 600px;
+  height: 500px;
   background-image: url("../assets/bg.png");
   background-size: cover;
   background-position: center right;
@@ -67,24 +67,25 @@
 }
 
 #intro {
-  height: 510px;
+  height: 410px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#intro > h2 {
-  font-family: "poppinsl";
+#intro > h1 {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: aliceblue;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /*========for < 800px===============*/
 /*========for < 800px===============*/
 
 @media screen and (max-width: 800px) {
-  #main {
-    background-size:;
-  }
   #header {
     height: 60px;
   }
@@ -107,6 +108,10 @@
     margin: 10px;
   }
   #intro {
-    height: 540px;
+    height: 440px;
+  }
+  #intro > h1 {
+    margin: 0 10%;
+    font-size: 35px;
   }
 }
