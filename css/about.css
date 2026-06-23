@@ -1,0 +1,46 @@
+#about {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+}
+
+#about-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container-box {
+  border-radius: 5%;
+  border: 3px rgb(205, 167, 1) solid;
+  margin: 20px;
+  width: 19%;
+  height: 150px;
+}
+
+#about > p {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30px;
+  font-family: "poppinsl";
+}
+
+/* mobile support */
+/* mobile support */
+@media screen and (max-width: 800px) {
+  #about-container {
+  }
+  .about-container-box {
+    margin: 5px;
+    margin-top: 10px;
+    width: 28%;
+  }
+  #about > p {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    font-family: "poppinsl";
+    font-size: medium;
+  }
+}
