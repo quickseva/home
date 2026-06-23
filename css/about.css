@@ -14,9 +14,36 @@
 .about-container-box {
   border-radius: 5%;
   border: 3px rgb(205, 167, 1) solid;
+  background-color: rgb(205, 167, 1);
   margin: 20px;
   width: 19%;
   height: 150px;
+  display: flex;
+}
+.about-container-box-img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container-box-img > img {
+  height: 60%;
+}
+.about-container-box-p {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container-box-p > p {
+  margin: 5px;
+  color: white;
+  font-family: "poppinsm";
 }
 
 #about > p {
@@ -35,7 +62,25 @@
     margin: 5px;
     margin-top: 10px;
     width: 28%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
+
+  .about-container-box-img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .about-container-box-img > img {
+    width: 60%;
+    height: auto;
+  }
+  .about-container-box-p {
+    width: 100%;
+    height: 50%;
+  }
+
   #about > p {
     margin-left: 10%;
     margin-right: 10%;
