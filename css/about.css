@@ -13,8 +13,7 @@
 
 .about-container-box {
   border-radius: 5%;
-  border: 3px rgb(205, 167, 1) solid;
-  background-color: rgb(205, 167, 1);
+  background-color: navy;
   margin: 20px;
   width: 19%;
   height: 150px;
