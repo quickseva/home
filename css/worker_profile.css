@@ -1,0 +1,116 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --main-color1: rgb(0, 0, 0); /*rgb(255,215,0)*/
+  --myyellow: rgb(7 39 86);
+}
+
+@font-face {
+  font-family: "poppinsm";
+  src: url("../assets/font/poppins/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppinsb";
+  src: url("../assets/font/poppins/Poppins-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppinsl";
+  src: url("../assets/font/poppins/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "robotomono";
+  src: url("../assets/font/robotomono/RobotoMono-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(255, 253, 253);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.worker-section-card {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../assets/worker/profile_bg.jpg");
+  background-size: cover;
+  border: 5px white solid;
+  background-color: red;
+  box-shadow: 0 4px 8px #000000;
+}
+
+.worker-section-card:hover {
+  transform: translateY(-8px);
+  transition: 0.3s;
+}
+.worker-section-card > img {
+  border-radius: 100%;
+  width: 70%;
+  border: 5px white solid;
+  background-color: aqua;
+}
+
+.name {
+  margin-top: 5px;
+  list-style-type: none;
+  font-family: "poppinsl";
+  color: yellow;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 0.1vw;
+}
+
+.work-type {
+  margin-top: 3px;
+  width: 100%;
+  background-color: white;
+  font-size: 17px;
+  height: 26px;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  justify-content: center;
+  font-family: Verdana, sans-serif;
+}
+
+.ex {
+  margin-top: 9 px;
+  font-size: 10px;
+  font-family: "poppinsl";
+  color: white;
+  width: 64%;
+  padding: 0 18%;
+  text-align: left;
+}
+.age {
+  margin-top: 2px;
+  font-size: 10px;
+  font-family: "poppinsl";
+  color: white;
+  width: 64%;
+  padding: 0 18%;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .worker-section-card {
+    width: 40%;
+    height: 250px;
+    margin: 10px;
+  }
+}

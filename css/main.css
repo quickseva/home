@@ -2,10 +2,9 @@
 
 #main {
   height: 500px;
-  background-image: url("../assets/bg1.png");
+  background-image: url("../assets/bg.png");
   background-size: cover;
-
-  background-position: center;
+  background-position: center right;
   background-repeat: no-repeat;
 }
 
@@ -97,10 +96,6 @@
 /*========for < 800px===============*/
 
 @media screen and (max-width: 800px) {
-  #main {
-    background-image: url(../assets/bg.png);
-    height: 350px;
-  }
   #header {
     height: 60px;
   }
