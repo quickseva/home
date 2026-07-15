@@ -31,9 +31,16 @@
 }
 
 body {
-  background-color: rgb(255, 253, 253);
+  background-image: url(../assets/new.png);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+.body {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -109,8 +116,22 @@ body {
 
 @media screen and (max-width: 800px) {
   .worker-section-card {
-    width: 40%;
-    height: 250px;
-    margin: 10px;
+    width: 30%;
+    width: 100px;
+    height: 180px;
+    margin: 5px;
+  }
+
+  .name {
+    font-size: 10px;
+  }
+
+  .work-type {
+    align-items: center;
+    height: 15px;
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 }

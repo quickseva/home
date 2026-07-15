@@ -474,7 +474,7 @@
           font-size: 14.5px;
         }
         .eyebrow {
-          font-size: 12px;
+          font-size: 14px;
         }
         .services {
           padding: 60px 0 60px;
@@ -557,13 +557,10 @@
     <section class="hero">
       <div class="hero-inner">
         <div class="hero-content">
-          <p class="eyebrow">QUALITY ALUMINIUM WORK</p>
-          <h2>Stronger. Lighter.<br />Better.</h2>
-          <p>
-            We specialize in premium aluminium works for your home, office and
-            commercial spaces.
-          </p>
-          <a href="#services" class="btn-primary">Our Services →</a>
+          <p class="eyebrow">ONE STOP SOLUTION FOR</p>
+          <h2>EVERY HOME<br />NEED</h2>
+          <p>Expert Services. Premium Quality Delivered </br> at Your Doorstep.</p>
+          <a href="./worker_profile.html" class="btn-primary">Our Team →</a>
         </div>
       </div>
     </section>
@@ -811,5 +808,15 @@ ${message}`;
 
         window.open(whatsappURL, "_blank");
       });
+  </script>
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+    navLinks.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => navLinks.classList.remove("open"));
+    });
   </script>
 </html>
