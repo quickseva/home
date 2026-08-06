@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Gallery</title>
+    <link rel="stylesheet" href="./css/work_gallery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+      const lightbox = GLightbox({
+        selector: ".gallery a",
+        touchNavigation: true,
+        loop: true,
+        zoomable: true,
+      });
+    </script>
+  </head>
+  <body>
+    <section class="work-gallery">
+      <div class="title">
+        <p>Projects we have completed</p>
+        <h2>OUR WORK</h2>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+    </section>
+  </body>
+  <script>
+    const gallery = document.getElementById("gallery");
+
+    for (let i = 1; i <= 29; i++) {
+      gallery.innerHTML += `
+    <a href="./assets/gallery/${i}.jpg" class="item">
+      <img src="./assets/gallery/${i}.jpg" alt="Work ${i}" loading="lazy">
+      <span>Interior</span>
+    </a>
+  `;
+    }
+  </script>
+</html>

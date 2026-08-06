@@ -542,7 +542,7 @@
           <li><a href="#" class="active">Home</a></li>
           <li><a href="./worker_profile.html">About team</a></li>
           <li><a href="#service">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
           <li><a href="#footer">Contact Us</a></li>
         </ul>
 
@@ -602,8 +602,7 @@
           <img src="./assets/service/1.png" alt="" />
           <div class="card-content">
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+               Durable aluminium doors, windows, partitions, and frames with precision installation and premium finishing.
             </p>
             <a href="./service/service1.html">SEE DETAILS</a>
           </div>
@@ -616,10 +615,10 @@
           <img src="./assets/service/2.png" alt="" />
           <div class="card-content">
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+            Strong steel gates, railings, structures, and fabrication built for lasting strength and reliability.
             </p>
-            <a href="#">SEE DETAILS</a>
+            <a href="./service/service2.html">SEE DETAILS</a>
+
           </div>
         </div>
 
@@ -630,10 +629,10 @@
           <img src="./assets/service/3.png" alt="" />
           <div class="card-content">
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              Energy-efficient UPVC doors and windows offering durability, insulation, and low maintenance.
             </p>
-            <a href="#">SEE DETAILS</a>
+            <a href="./service/service3.html">SEE DETAILS</a>
+          
           </div>
         </div>
 
@@ -644,10 +643,12 @@
           <img src="./assets/service/4.png" alt="" />
           <div class="card-content">
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              Expert plumbing solutions for leak repairs, pipe fitting, drainage, and water supply systems.
+
             </p>
-            <a href="#">SEE DETAILS</a>
+            
+            <a href="./service/service4.html">SEE DETAILS</a>
+
           </div>
         </div>
 
@@ -658,10 +659,11 @@
           <img src="./assets/service/5.png" alt="" />
           <div class="card-content">
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              Safe electrical installations, wiring, lighting, repairs, and maintenance by skilled
             </p>
-            <a href="#">SEE DETAILS</a>
+        
+            <a href="./service/service5.html">SEE DETAILS</a>
+          
           </div>
         </div>
 
@@ -672,24 +674,24 @@
           <img src="./assets/service/6.png" alt="" />
           <div class="card-content">
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              Premium glass partitions, doors, windows, and custom installations with elegant modern finishes.
             </p>
-            <a href="#">SEE DETAILS</a>
+            <a href="./service/service6.html">SEE DETAILS</a>
+        
           </div>
         </div>
 
         <div class="card">
           <div class="card-header">
-            <h3>PLY WORK</h3>
+            <h3>PLY DOOR</h3>
           </div>
           <img src="./assets/service/7ply.png" alt="" />
           <div class="card-content">
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              High-quality plywood doors crafted for durability, smooth finishing, and stylish interiors.
             </p>
-            <a href="#">SEE DETAILS</a>
+            <a href="./service/service7.html">SEE DETAILS</a>
+            
           </div>
         </div>
       </div>
@@ -704,31 +706,31 @@
 
       <div class="gallery-grid">
         <div class="gallery-item large">
-          <img src="./assets/gallery/1.png" alt="" />
+          <img src="./assets/gallery/1.jpg" alt="" />
         </div>
 
         <div class="gallery-item large">
-          <img src="./assets/gallery/2.png" alt="" />
+          <img src="./assets/gallery/2.jpg" alt="" />
         </div>
 
         <div class="gallery-item large">
-          <img src="./assets/gallery/3.png" alt="" />
+          <img src="./assets/gallery/3.jpg" alt="" />
         </div>
 
         <div class="gallery-item large">
-          <img src="./assets/gallery/4.png" alt="" />
+          <img src="./assets/gallery/4.jpg" alt="" />
         </div>
 
         <div class="gallery-item large">
-          <img src="./assets/gallery/5.png" alt="" />
+          <img src="./assets/gallery/5.jpg" alt="" />
         </div>
 
         <div class="gallery-item large">
-          <img src="./assets/gallery/6.png" alt="" />
+          <img src="./assets/gallery/6.jpg" alt="" />
         </div>
 
         <div class="gallery-item large">
-          <img src="./assets/gallery/7.png" alt="" />
+          <img src="./assets/gallery/7.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -749,7 +751,17 @@
               placeholder="Your Number"
               required
             />
-
+        <select id="worktype"    name="worktype" required>
+            <option value="null">-- Select Type --</option>
+            <option value="Aluminium">Aluminium</option>
+            <option value="Steel">Steel</option>
+            <option value="UPVC">UPVC</option>
+            <option value="Plubing">Plumbing</option>
+            <option value="Electric">Electric</option>
+            <option value="Glass Etching">Glass Etching</option>
+            <option value="PLY Door">PLY Door</option>
+        </select>
+    
             <textarea
               id="address"
               placeholder="Your Address"
@@ -795,6 +807,7 @@
         let name = document.getElementById("name").value;
         let email = document.getElementById("number").value;
         let message = document.getElementById("address").value;
+        let worktype = document.getElementById("worktype").value;
 
         let text = `*New Contact Form Submission*
 
@@ -802,7 +815,9 @@
 📧 Number: ${email}
 
 📝 Address :
-${message}`;
+${message}
+Work Type ${worktype}`;
+ 
 
         let whatsappURL = `https://wa.me/9142354386?text=${encodeURIComponent(text)}`;
 

@@ -58,6 +58,7 @@ body {
   border: 5px white solid;
   background-color: red;
   box-shadow: 0 4px 8px #000000;
+  border-radius: 10%;
 }
 
 .worker-section-card:hover {
