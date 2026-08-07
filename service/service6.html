@@ -227,7 +227,7 @@
           <div class="contact-details">
             <p>📧 info@quickseva.com</p>
             <p>📞 9142354386</p>
-            <p>📍 Sahibganj, India</p>
+            <p>📍 Sahibganj Jharkhand, India</p>
           </div>
         </div>
       </div>
@@ -251,14 +251,11 @@
         let message = document.getElementById("address").value;
         let worktype = document.getElementById("worktype").value;
 
-        let text = `*New Contact Form Submission*
+       let text = `*NAME*: ${name} ,
+*NUMBER* : ${email} ,
 
-👤 Name: ${name}
-📧 Number: ${email}
-
-📝 Address :
-${message}
-Work Type ${worktype}`;
+ *ADDRESS* : ${message}
+ *TYPE* : ${worktype}`;
  
 
         let whatsappURL = `https://wa.me/9142354386?text=${encodeURIComponent(text)}`;
